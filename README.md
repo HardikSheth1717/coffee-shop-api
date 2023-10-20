@@ -11,7 +11,7 @@
 
 ## Description
 
-This project is Semaphore API using [Nest](https://github.com/nestjs/nest) framework TypeScript.
+This project is Coffee Shop API using [Nest](https://github.com/nestjs/nest) framework TypeScript.
 
   
 ## Nest API Status Codes Handled in project

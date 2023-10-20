@@ -15,13 +15,13 @@ export function createDocumentBuilder(
 		)
 		.setTitle(
 			moduleName
-				? `Semaphore API Documentation (${moduleName})`
-				: 'Semaphore API Documentation'
+				? `Coffee Shop API Documentation (${moduleName})`
+				: 'Coffee Shop API Documentation'
 		)
 		.setDescription(
 			moduleName
 				? `This is a complete API guide for ${moduleName} module.<br /><br /><br /><a href="${process.env.BASE_URL}:${process.env.SERVER_PORT}">Home</a>`
-				: `This is a complete API guide for Semaphore.<br /><br /><br /><a href="${process.env.BASE_URL}:${process.env.SERVER_PORT}">Home</a>`
+				: `This is a complete API guide for Coffee Shop.<br /><br /><br /><a href="${process.env.BASE_URL}:${process.env.SERVER_PORT}">Home</a>`
 		)
 		.setVersion(API_VERSION)
 		.addTag(

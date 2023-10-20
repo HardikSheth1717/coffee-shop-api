@@ -1,7 +1,7 @@
 {
   "name": "coffee-shop-api",
   "version": "0.0.1",
-  "description": "A NodeJS API using Nest Framewarok for Semaphore",
+  "description": "A NodeJS API using Nest Framewarok for Coffee Shop",
   "author": "Hardik Sheth",
   "private": true,
   "license": "UNLICENSED",
