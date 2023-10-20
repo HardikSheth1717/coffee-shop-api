@@ -22,11 +22,11 @@ export class ItemService implements ItemServiceInterface {
 	) {}
 
 	/**
-	 * Returns a list of all the records of item.
+	 * Returns a list of all the records of item based on their popularity.
 	 */
 	getAll(): Promise<ItemEntity[]> {
 		try {
-			return this.itemRepository.getAll();
+			return this.itemRepository.getPopularItems();
 		} catch (error) {
 			throw error;
 		}

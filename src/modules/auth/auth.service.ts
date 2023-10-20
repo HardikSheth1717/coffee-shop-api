@@ -116,7 +116,7 @@ export class AuthService implements AuthServiceInterface {
 			),
 			algorithm: 'HS256',
 			issuer: 'Hardik Sheth',
-			audience: 'https://localhost:44308/'
+			audience: 'https://localhost:3001/'
 		});
 
 		// Generate refresh token using above payload.
@@ -202,7 +202,7 @@ export class AuthService implements AuthServiceInterface {
 				),
 				algorithm: 'HS256',
 				issuer: 'Hardik Sheth',
-				audience: 'https://localhost:44308/'
+				audience: 'https://localhost:3001/'
 			})
 		};
 	}
@@ -243,7 +243,7 @@ export class AuthService implements AuthServiceInterface {
 				),
 				algorithm: 'HS256',
 				issuer: 'Hardik Sheth',
-				audience: 'https://localhost:44308/'
+				audience: 'https://localhost:3001/'
 			});
 
 			// Save access token in Redis against session id.

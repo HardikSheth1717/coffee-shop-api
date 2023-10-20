@@ -34,7 +34,7 @@ export class JwtLogoutStrategy extends PassportStrategy(
 				EnvKeys.JWT_ACCESS_TOKEN_SECRET
 			),
 			issuer: 'Hardik Sheth',
-			audience: 'https://localhost:44308/'
+			audience: 'https://localhost:3001/'
 		});
 
 		this.redisClient = this.redisManager.getClient();

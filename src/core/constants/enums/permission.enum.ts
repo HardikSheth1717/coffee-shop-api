@@ -1,7 +1,7 @@
 export enum PermissionEnum {
-	CREATE = 'canCreate',
-	MODIFY = 'canModify',
-	DELETE = 'canDelete',
-	VIEW = 'canView',
-	MANAGE = 'canManage'
+	CREATE = 'cancreate',
+	MODIFY = 'canmodify',
+	DELETE = 'candelete',
+	VIEW = 'canview',
+	MANAGE = 'canmanage'
 }

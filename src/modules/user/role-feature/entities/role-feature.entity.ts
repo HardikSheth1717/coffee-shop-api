@@ -45,7 +45,7 @@ export class RoleFeatureEntity {
 	 * User have permission to create new record or not.
 	 */
 	@Column({
-		name: 'canCreate',
+		name: 'can_create',
 		type: 'boolean',
 		comment: 'User have permission to create new record or not.',
 		nullable: false
@@ -56,7 +56,7 @@ export class RoleFeatureEntity {
 	 * User have permission to modify an existing record or not.
 	 */
 	@Column({
-		name: 'canModify',
+		name: 'can_modify',
 		type: 'boolean',
 		comment: 'User have permission to modify an existing record or not.',
 		nullable: false
@@ -67,7 +67,7 @@ export class RoleFeatureEntity {
 	 * User have permission to view records or not.
 	 */
 	@Column({
-		name: 'canView',
+		name: 'can_view',
 		type: 'boolean',
 		comment: 'User have permission to view records or not.',
 		nullable: false
@@ -78,7 +78,7 @@ export class RoleFeatureEntity {
 	 * User have permission to delete an existing record or not.
 	 */
 	@Column({
-		name: 'canDelete',
+		name: 'can_delete',
 		type: 'boolean',
 		comment: 'User have permission to delete an existing record or not.',
 		nullable: false
@@ -89,7 +89,7 @@ export class RoleFeatureEntity {
 	 * User have permission to manage records or not.
 	 */
 	@Column({
-		name: 'canManage',
+		name: 'can_manage',
 		type: 'boolean',
 		comment: 'User have permission to manage records or not.',
 		nullable: false

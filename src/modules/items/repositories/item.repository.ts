@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
+import { InjectDataSource, InjectRepository } from '@nestjs/typeorm';
+import { DataSource, Repository } from 'typeorm';
 
 import { BaseAbstractRepository } from '@base/repositories/base.repository';
 import { ItemRepositoryInterface } from '../interfaces/item.repository.interface';
@@ -16,8 +16,30 @@ export class ItemRepository
 {
 	constructor(
 		@InjectRepository(ItemEntity)
-		private readonly itemRepository: Repository<ItemEntity>
+		private readonly itemRepository: Repository<ItemEntity>,
+		@InjectDataSource() private readonly connection: DataSource
 	) {
 		super(itemRepository);
+	}
+
+	/**
+	 * Get popular item list.
+	 */
+	async getPopularItems(): Promise<ItemEntity[]> {
+		const permissions = await this.connection.query(
+			`
+			SELECT i.*
+			FROM items i
+			LEFT JOIN (
+				SELECT item_id, COUNT(1) Cnt
+				FROM orders
+				GROUP BY item_id
+			) o ON i.item_id = o.item_id
+			ORDER BY o.Cnt DESC
+			`
+		);
+
+		const permissionsDto = permissions as ItemEntity[];
+		return permissionsDto;
 	}
 }

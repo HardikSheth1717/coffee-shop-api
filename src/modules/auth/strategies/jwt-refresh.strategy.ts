@@ -30,7 +30,7 @@ export class JwtRefreshStrategy extends PassportStrategy(
 			),
 			passReqToCallback: true,
 			issuer: 'Hardik Sheth',
-			audience: 'https://localhost:44308/'
+			audience: 'https://localhost:3001/'
 		});
 	}
 

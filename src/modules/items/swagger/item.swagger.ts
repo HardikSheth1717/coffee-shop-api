@@ -12,7 +12,7 @@ export default function getSwaggerDocument(app: INestApplication) {
 		include: [ItemModule]
 	});
 
-	SwaggerModule.setup(SwaggerApiKeys.CATEGORY_MASTER, app, document, {
+	SwaggerModule.setup(SwaggerApiKeys.ITEM_MASTER, app, document, {
 		customCss: CUSTOM_CSS,
 		customJs: 'custom.js',
 		swaggerOptions: {

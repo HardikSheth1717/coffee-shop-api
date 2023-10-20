@@ -25,6 +25,10 @@ import { FeatureGroupModule } from '@modules/feature-group/feature-group.module'
 import { ServeStaticModule } from '@nestjs/serve-static';
 
 import { ItemModule } from '@modules/items/item.module';
+// import { ItemPriceModule } from '@modules/item-prices/item-price.module';
+import { CustomerModule } from '@modules/customers/customer.module';
+import { CustomerPointModule } from '@modules/customer-points/customer-point.module';
+import { OrderModule } from '@modules/orders/order.module';
 
 
 @Module({
@@ -64,7 +68,11 @@ import { ItemModule } from '@modules/items/item.module';
 		RoleFeatureModule,
 		UserAccountModule,
 		UserSessionModule,
-		ItemModule
+		ItemModule,
+		// ItemPriceModule,
+		CustomerModule,
+		CustomerPointModule,
+		OrderModule
 	],
 	controllers: [AppController],
 	providers: [

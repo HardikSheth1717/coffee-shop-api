@@ -31,6 +31,14 @@ export class CreateItemDto {
 	@Transform(({ value }: TransformFnParams) => value.trim())
 	@Length(2, 100)
 	itemName: string;
+	
+	/**
+	 * Mobile number of the customer.
+	 */
+	@IsDefined()
+	@IsInt()
+	@IsPositive()
+	price: number;
 
 	/**
 	 * Remarks / description of the item.
@@ -58,5 +66,5 @@ export class CreateItemDto {
 	 */
 	@IsDefined()
 	@IsBoolean()
-	isSystem: boolean;
+	isActive: boolean;
 }

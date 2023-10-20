@@ -26,7 +26,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
 			),
 			passReqToCallback: true,
 			issuer: 'Hardik Sheth',
-			audience: 'https://localhost:44308/'
+			audience: 'https://localhost:3001/'
 		});
 
 		this.redisClient = this.redisManager.getClient();

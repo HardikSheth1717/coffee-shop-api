@@ -20,25 +20,25 @@ export class PermissionDto {
 	/**
 	 * User have permission to create new record or not.
 	 */
-	canCreate: boolean;
+	cancreate: boolean;
 
 	/**
 	 * User have permission to modify an existing record or not.
 	 */
-	canModify: boolean;
+	canmodify: boolean;
 
 	/**
 	 * User have permission to view records or not.
 	 */
-	canView: boolean;
+	canview: boolean;
 
 	/**
 	 * User have permission to delete an existing record or not.
 	 */
-	canDelete: boolean;
+	candelete: boolean;
 
 	/**
 	 * User have permission to manage records or not.
 	 */
-	canManage: boolean;
+	canmanage: boolean;
 }
